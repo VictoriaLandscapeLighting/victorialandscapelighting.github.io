@@ -1,0 +1,26 @@
+html {
+    background-color: $color-background;
+    color: $color;
+    font-weight: normal;
+    font-family: $font-sans-serif;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+    scroll-behavior: smooth;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+
+    @media screen and (max-width: $breakpoint-small) {
+        font-size: 100%;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $color-background--darkMode;
+        color: $color--darkMode;
+    }
+}
+
+main {
+    @extend .width;
+    @extend .clearfix;
+}
