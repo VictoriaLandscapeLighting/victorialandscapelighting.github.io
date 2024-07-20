@@ -6,13 +6,13 @@ layout: compress
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
-        {% if page.class == "post" %}
-        <title>{{ page.title }} &mdash; Adam Whitcroft</title>
+        {% if page.class != "home" %}
+        <title>{{ page.title }} &mdash; Victoria Landscape Lighting</title>
         {% else %}
-        <title>Adam Whitcroft</title>
+        <title>Victoria Landscape Lighting</title>
         {% endif %}
         <meta property="og:type" content="website">
-        <meta property="og:title" content="Adam Whitcroft">
+        <meta property="og:title" content="">
         <meta property="og:image" content="">
         <meta property="og:description" content="">
         <meta property="og:site_name" content="">
@@ -28,6 +28,6 @@ layout: compress
         <link rel="stylesheet" href="{{ "/css/main.css" | append: cacheBust }}">
     </head>
     <body class="{{ page.class }}">
-        {{ content }}
+        {% include main.html %}
     </body>
 </html>
