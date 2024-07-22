@@ -13,31 +13,26 @@
                                 {{ item.title | capitalize }}
                             </a>
                         </li>
-                        {% unless forloop.last %}
-                        <li aria-hidden="true">&middot;</li>
-                        {% endunless %}
+                        <li aria-hidden="true" class="middot">&middot;</li>
                         {% endfor %}
+                        <li class="instagram">
+                            <a href="">{% include svgs/instagram.svg %}</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </div>
         <hr />
-        <div class="grid-container">
+        <div class="grid-container footer-bottom-row">
             <div class="colspan-3">
+                <p>
+                    <a href="">adam@victorialandscapelighting.com</a>
+                </p>
+            </div>
+            <div class="colspan-3 align-right copyright">
                 <p>
                     &copy;2024 Victoria Landscape Lighting Ltd.
                 </p>
-            </div>
-            <div class="colspan-3 align-right">
-                <ul>
-                    <li>
-                        <a href="">adam@victorialandscapelighting.com</a>
-                    </li>
-                    <li aria-hidden="true">&middot;</li>
-                    <li>
-                        <a href="">{% include svgs/instagram.svg %}</a>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>

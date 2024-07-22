@@ -5,6 +5,18 @@ footer {
         background: $brand-tertiary;
         border-radius: $corner-radius--large;
         margin-bottom: 2em;
+
+        @media screen and (max-width: $breakpoint-small) {
+            margin-bottom: 1.5em;
+        }
+    }
+
+    .grid-container {
+        /// Override our grid layout to block
+        /// when we get to tablet size
+        @media screen and (max-width: $breakpoint-large) {
+            display: block;
+        }
     }
 
     .align-right {
@@ -32,16 +44,44 @@ footer {
         padding: 0;
         margin: 0;
         display: flex;
+
+        @media screen and (max-width: $breakpoint-large) {
+            display: block;
+            margin-top: 1em;
+        }
+    }
+
+    li {
+        margin-left: .5em;
+
+        @media screen and (max-width: $breakpoint-large) {
+            margin: 0;
+        }
     }
 
     a {
-        margin: 0 0.5em;
         text-decoration: none;
         color: $brand-primary;
+
+        @media screen and (max-width: $breakpoint-large) {
+            margin: 0;
+        }
     }
 
     svg {
         fill: $brand-primary;
     }
 
+    .middot {
+        @media screen and (max-width: $breakpoint-large) {
+            display: none;
+        }
+    }
+
+    .instagram,
+    .copyright {
+        @media screen and (max-width: $breakpoint-large) {
+            margin-top: 1em;
+        }
+    }
 }
