@@ -1,6 +1,23 @@
 ---
 ---
 @import
+// Base
+'normalize',
 'variables',
 'extends',
-'style'
+'grid',
+'type',
+'style',
+// Home
+'home/about',
+'home/faqs',
+'home/hardware',
+'home/hero-image',
+'home/hero',
+'home/introduction',
+'home/process',
+'home/recent-work',
+// Components
+'components/checkmarklist',
+'components/footer',
+'components/header'

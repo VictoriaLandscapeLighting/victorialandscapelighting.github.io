@@ -4,15 +4,20 @@ $font-sans-serif: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "
 
 /* Colors */
 
-$color: #254920;
+$brand-primary: #254920;
+$brand-secondary: #CFA47A;
+$brand-tertiary: #F7F4ED;
+
+$color: $brand-primary;
 $color--darkMode: green;
 
-$color-background: #ECEEEB;
+$color-background: #FEFCF7;
 $color-background--darkMode: #111;
 
 /* Layout */
 
-$width: 60em;
+$width: 962px;
+$corner-radius--large: 24px;
 
 /* Responsive */
 

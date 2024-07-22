@@ -1,0 +1,15 @@
+<section class="about grid-container content-block" aria-labelledby="about-heading" aria-describedby="about-description">
+    <div class="colspan-4 offset-1">
+        <h2 id="about-heading">{{ site.data.home.about.about-title }}</h2>
+        <div id="about-description">
+            {% for paragraph in site.data.home.about.about-description %}
+            <p>{{ paragraph }}</p>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="colspan-4 offset-1">
+        <div role="image" aria-label="{{ site.data.aria-labels.home-about }}">
+            <div class="placeholder"></div>
+        </div>
+    </div>
+</section>

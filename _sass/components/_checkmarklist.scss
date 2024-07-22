@@ -1,0 +1,35 @@
+.checkmarklist {
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        background: $brand-tertiary;
+        padding: 1em 1.25em;
+        border-radius: $corner-radius--large;
+        margin-bottom: 2px;
+        display: flex;
+        align-items: center;
+
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+
+    span {
+        font-weight: 700;
+    }
+
+    svg {
+        display: flex;
+        margin-right: .75em;
+        fill: $brand-secondary;
+    }
+}

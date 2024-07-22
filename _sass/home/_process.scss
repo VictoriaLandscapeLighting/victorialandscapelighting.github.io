@@ -1,0 +1,41 @@
+.process {
+
+    h2 {
+        @extend .mega;
+    }
+
+    .process-step {
+        padding: 2em;
+        border: 1px dashed $brand-primary;
+        border-radius: $corner-radius--large;
+
+        &:hover {
+            background: $brand-tertiary;
+            border: 1px solid $brand-tertiary;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .process-step-title {
+            font-weight: 700;
+            margin: 1em 0;
+        }
+
+    }
+
+    .active {
+        background: $brand-tertiary;
+        border: 1px solid $brand-tertiary;
+    }
+
+    .process-step-title {
+        font-weight: 700;
+        margin: 1em 0;
+    }
+
+    svg {
+        fill: $brand-secondary;
+    }
+}

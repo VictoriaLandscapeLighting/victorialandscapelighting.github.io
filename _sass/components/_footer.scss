@@ -1,0 +1,47 @@
+footer {
+
+    .footer-container {
+        padding: 1.25em 2em;
+        background: $brand-tertiary;
+        border-radius: $corner-radius--large;
+        margin-bottom: 2em;
+    }
+
+    .align-right {
+        margin-left: auto;
+    }
+
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid $color-background;
+        margin: 1.25em 0;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    a {
+        margin: 0 0.5em;
+        text-decoration: none;
+        color: $brand-primary;
+    }
+
+    svg {
+        fill: $brand-primary;
+    }
+
+}

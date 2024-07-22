@@ -1,1 +1,18 @@
-<header></header>
+<header role="banner">
+    <h1>Header</h1>
+    <nav aria-label="Main Navigation">
+        <ul>
+            {% for item in site.data.menu %}
+            <li>
+                <a {% if page.class==item.title %}class="active" {% endif %} href="{{ item.url }}">
+                    {{ item.title | capitalize }}
+                </a>
+            </li>
+            <li aria-hidden="true"> &middot; </li>
+            {% endfor %}
+            <li>
+                <a id="color-scheme-toggle">Toggle</a>
+            </li>
+        </ul>
+    </nav>
+</header>

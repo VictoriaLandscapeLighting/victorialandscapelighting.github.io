@@ -1,0 +1,32 @@
+.recent-work {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+
+    @media screen and (max-width: $breakpoint-small) {
+        display: block;
+    }
+    
+    div {
+        background: red;
+        background-position: center;
+        border-radius: $corner-radius--large;
+        height: 400px;
+        transition: flex 0.3s ease-in-out;
+
+        &:hover {
+            flex: 4;
+        }
+
+        &:not(:hover) {
+            flex: 1;
+        }
+    }
+
+    .second {
+        @media screen and (max-width: $breakpoint-small) {
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+    }
+}

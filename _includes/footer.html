@@ -1,0 +1,44 @@
+<footer role="">
+    <div class="footer-container">
+        <div class="grid-container">
+            <div class="colspan-3">
+                <div role="image" aria-label="Victoria Landscape Lighting Ltd. logo">logo</div>
+            </div>
+            <div class="colspan-3 align-right">
+                <nav aria-label="Footer Navigation">
+                    <ul>
+                        {% for item in site.data.menu %}
+                        <li>
+                            <a {% if page.class==item.title %}class="active" {% endif %} href="{{ item.url }}">
+                                {{ item.title | capitalize }}
+                            </a>
+                        </li>
+                        {% unless forloop.last %}
+                        <li aria-hidden="true">&middot;</li>
+                        {% endunless %}
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <hr />
+        <div class="grid-container">
+            <div class="colspan-3">
+                <p>
+                    &copy;2024 Victoria Landscape Lighting Ltd.
+                </p>
+            </div>
+            <div class="colspan-3 align-right">
+                <ul>
+                    <li>
+                        <a href="">adam@victorialandscapelighting.com</a>
+                    </li>
+                    <li aria-hidden="true">&middot;</li>
+                    <li>
+                        <a href="">{% include svgs/instagram.svg %}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

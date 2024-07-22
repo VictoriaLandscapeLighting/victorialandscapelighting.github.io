@@ -1,0 +1,10 @@
+<div class="checkmarklist">
+    <ul>
+        {% for item in include.items %}
+        <li>
+            {% include svgs/checkmark.svg %}
+            <p>{{ item.feature }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
