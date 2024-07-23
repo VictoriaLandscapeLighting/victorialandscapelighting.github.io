@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Post title
-permalink: /work/greenpath/
+permalink: /projects/greenpath/
 ---
 
 This is a post, it's called {{page.title}}
