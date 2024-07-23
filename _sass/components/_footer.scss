@@ -12,6 +12,7 @@ footer {
     }
 
     .grid-container {
+
         /// Override our grid layout to block
         /// when we get to tablet size
         @media screen and (max-width: $breakpoint-large) {
@@ -28,7 +29,7 @@ footer {
         height: 1px;
         border: 0;
         border-top: 1px solid $color-background;
-        margin: 1.25em 0;
+        margin: 20px 0;
     }
 
     p {
@@ -82,6 +83,13 @@ footer {
     .copyright {
         @media screen and (max-width: $breakpoint-large) {
             margin-top: 1em;
+        }
+    }
+
+    .instagram {
+
+        a {
+            display: flex;
         }
     }
 }

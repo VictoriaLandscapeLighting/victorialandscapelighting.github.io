@@ -4,4 +4,6 @@ title: Work
 class: work
 ---
 
-Work
+{% include work/page-title.html %}
+
+{% include work/projects.html %}

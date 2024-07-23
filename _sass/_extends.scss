@@ -14,3 +14,11 @@
     clear: both;
     display: table;
 }
+
+.responsive-image {
+    height: $image-height-large;
+
+    @media screen and (max-width: $breakpoint-small) {
+        height: $image-height-small;
+    }
+}

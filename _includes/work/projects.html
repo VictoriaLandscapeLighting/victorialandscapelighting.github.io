@@ -1,0 +1,19 @@
+<section class="projects content-block">
+    {% for project in site.data.work.work.projects %}
+    <div class="project-tile grid-container">
+        {%
+        include aria-image.html
+        aria-label=project.aria-label
+        image-url=project.image-1
+        %}
+
+        {%
+        include see-more-card.html
+        title="Latest project"
+        subtitle="PROJECT NAME"
+        button-href="/work/"
+        button-label="More work"
+        %}
+    </div>
+    {% endfor %}
+</section>

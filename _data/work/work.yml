@@ -1,0 +1,9 @@
+work-title: Work
+work-subtitle: For full project details, click on an image below.
+projects:
+  - name: Greenpath, Saanich BC
+    image-1: "/assets/placeholder.jpg"
+    aria-label: "Image showing a gorgeous open space"
+  - name: Open Space, Saanich BC
+    image-1: "/assets/placeholder.jpg"
+    aria-label: "Image showing a gorgeous open space"

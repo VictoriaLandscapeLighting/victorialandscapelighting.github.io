@@ -1,0 +1,18 @@
+.aria-image {
+    @extend .responsive-image;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+
+    img {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        clip: rect(0, 0, 0, 0);
+        overflow: hidden;
+    }
+
+}

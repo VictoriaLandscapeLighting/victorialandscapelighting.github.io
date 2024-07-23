@@ -2,7 +2,7 @@
     <ul>
         {% for item in include.items %}
         <li>
-            {% include svgs/checkmark.svg %}
+            <span class="checkmark" aria-hidden="true">&check;</span>
             <p>{{ item.feature }}</p>
         </li>
         {% endfor %}

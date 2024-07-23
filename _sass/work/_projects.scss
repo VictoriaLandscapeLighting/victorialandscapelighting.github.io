@@ -1,11 +1,12 @@
-.recent-work {
+.projects {
 
-    .aria-image {
-        border-radius: $corner-radius--large;
+    .project-tile {
+        margin-bottom: 16px;
     }
 
-    .aria-image:nth-child(1) {
+    .aria-image {
         grid-column: span 4;
+        border-radius: $corner-radius--large;
 
         @media screen and (max-width: $breakpoint-large) {
             grid-column: span 3;
@@ -14,10 +15,6 @@
         @media screen and (max-width: $breakpoint-small) {
             grid-column: span 6;
         }
-    }
-
-    .aria-image:nth-child(3) {
-        grid-column: span 6;
     }
 
     .see-more-card {
