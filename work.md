@@ -7,3 +7,5 @@ class: work
 {% include work/page-title.html %}
 
 {% include work/projects.html %}
+
+{% include get-in-touch.html %}

@@ -1,6 +1,6 @@
 .see-more-card {
+    @extend .rounded-corner;
     background-color: $brand-tertiary;
-    border-radius: $corner-radius--large;
     display: flex;
     flex-direction: column;
 

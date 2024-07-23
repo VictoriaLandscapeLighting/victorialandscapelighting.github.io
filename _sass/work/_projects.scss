@@ -5,8 +5,9 @@
     }
 
     .aria-image {
+        @extend .image-400-300;
+        @extend .rounded-corner;
         grid-column: span 4;
-        border-radius: $corner-radius--large;
 
         @media screen and (max-width: $breakpoint-large) {
             grid-column: span 3;

@@ -14,4 +14,9 @@
         border-radius: $corner-radius--large;
     }
 
+    .aria-image {
+        @extend .image-400-300;
+        @extend .rounded-corner;
+    }
+
 }

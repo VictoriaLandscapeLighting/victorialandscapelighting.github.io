@@ -15,7 +15,11 @@
     display: table;
 }
 
-.responsive-image {
+.rounded-corner {
+    border-radius: $corner-radius--large;
+}
+
+.image-400-300 {
     height: $image-height-large;
 
     @media screen and (max-width: $breakpoint-small) {

@@ -1,4 +1,5 @@
-<section class="about grid-container content-block" aria-labelledby="about-heading" aria-describedby="about-description">
+<section class="about grid-container content-block" aria-labelledby="about-heading"
+    aria-describedby="about-description">
     <div class="colspan-4 offset-1">
         <h2 id="about-heading">{{ site.data.home.about.about-title }}</h2>
         <div id="about-description">
@@ -8,8 +9,10 @@
         </div>
     </div>
     <div class="colspan-4 offset-1">
-        <div role="image" aria-label="{{ site.data.aria-labels.home-about }}">
-            <div class="placeholder"></div>
-        </div>
+        {%
+        include aria-image.html
+        aria-label=site.data.home.about.aria-label
+        image-url=site.data.home.about.image-url
+        %}
     </div>
 </section>

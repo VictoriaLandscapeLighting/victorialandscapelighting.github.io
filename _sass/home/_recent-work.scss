@@ -1,7 +1,8 @@
 .recent-work {
 
     .aria-image {
-        border-radius: $corner-radius--large;
+        @extend .image-400-300;
+        @extend .rounded-corner;
     }
 
     .aria-image:nth-child(1) {
