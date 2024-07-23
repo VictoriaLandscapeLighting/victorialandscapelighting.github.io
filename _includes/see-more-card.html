@@ -5,7 +5,9 @@
         <p class="see-more-subtitle">{{ include.subtitle }}</p>
         {% endif %}
     </div>
-    <span class="see-more-link">
-        <a href="{{ include.button-href }}">{{ include.button-label }}<span>&rarr;</span></a>
-    </span>
+    <a href="{{ include.button-href }}" class="see-more-link">
+        <span class="see-more-anchor">
+            {{ include.button-label }}<span class="see-more-arrow">&rarr;</span>
+        </span>
+    </a>
 </div>

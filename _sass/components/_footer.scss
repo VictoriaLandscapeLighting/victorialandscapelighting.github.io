@@ -48,7 +48,7 @@ footer {
 
         @media screen and (max-width: $breakpoint-large) {
             display: block;
-            margin-top: 1em;
+            margin-top: 2em;
         }
     }
 
@@ -61,8 +61,11 @@ footer {
     }
 
     a {
-        text-decoration: none;
-        color: $brand-primary;
+        color: $link-color;
+
+        &:hover {
+            color: $link-color--hover;
+        }
 
         @media screen and (max-width: $breakpoint-large) {
             margin: 0;
@@ -71,6 +74,10 @@ footer {
 
     svg {
         fill: $brand-primary;
+
+        &:hover {
+            fill: $link-color--hover;
+        }
     }
 
     .middot {
@@ -82,7 +89,7 @@ footer {
     .instagram,
     .copyright {
         @media screen and (max-width: $breakpoint-large) {
-            margin-top: 1em;
+            margin-top: 2em;
         }
     }
 

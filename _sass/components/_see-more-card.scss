@@ -28,16 +28,16 @@
         margin-right: .5em;
         margin-bottom: .5em;
         border-radius: 16px;
-        
-        a {
+        text-decoration: none;
+
+        .see-more-anchor {
             display: flex;
-            text-decoration: none;
-            color: $color;
+            color: $link-color;
             font-size: 1.25em;
             font-weight: 500;
         }
 
-        span {
+        .see-more-arrow {
             margin-left: auto;
         }
     }
