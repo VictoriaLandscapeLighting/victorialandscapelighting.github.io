@@ -1,11 +1,12 @@
 .see-more-card {
     @extend .rounded-corner;
     background-color: $brand-tertiary;
+    padding: 1.25em;
     display: flex;
     flex-direction: column;
 
-    .inner {
-        padding: 1.5em;
+    p {
+        margin: 0;
     }
 
     .see-more-title {
@@ -14,31 +15,30 @@
 
     .see-more-subtitle {
         font-size: 1.25em;
+
+        @media screen and (max-width: $breakpoint-small) {
+            margin-bottom: 1em;
+        }
     }
 
-    p {
-        margin: 0;
-    }
-
-    .see-more-link {
+    a {
         margin-top: auto;
-        border: 1px solid $brand-primary;
-        padding: .5em 1em;
-        margin-left: .5em;
-        margin-right: .5em;
-        margin-bottom: .5em;
-        border-radius: 16px;
-        text-decoration: none;
+        display: flex;
+        color: $link-color;
+        font-size: 1.25em;
+        font-weight: 500;
 
-        .see-more-anchor {
-            display: flex;
-            color: $link-color;
-            font-size: 1.25em;
-            font-weight: 500;
+        span {
+            margin-left: auto;
+            transition: 50ms linear;
         }
 
-        .see-more-arrow {
-            margin-left: auto;
+        &:hover {
+            color: $link-color--hover;
+
+            span {
+                transform: translateX(4px);
+            }
         }
     }
 }

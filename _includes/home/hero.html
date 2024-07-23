@@ -5,5 +5,10 @@
     <div class="grid-container">
         <p id="hero-description" class="colspan-4">{{ site.data.home.hero.hero-description }}</p>
     </div>
-    <a class="button-primary" href="">{{ site.data.home.hero.hero-cta }}</a>
+    {% 
+    include button.html
+    type="primary"
+    label=site.data.home.hero.hero-cta
+    href="" 
+    %}
 </section>

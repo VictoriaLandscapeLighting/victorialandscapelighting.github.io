@@ -53,20 +53,3 @@ footer {
         margin-bottom: 1.6em;
     }
 }
-
-.button-primary {
-    color: white;
-    background: $brand-primary;
-    border-radius: 12px;
-    padding: .75em 1em;
-    font-size: 1.25em;
-    cursor: pointer;
-    text-align: center;
-    font-weight: 500;
-    text-decoration: none;
-    display: inline-block;
-
-    &:hover {
-        background: $link-color--hover;
-    }
-}
