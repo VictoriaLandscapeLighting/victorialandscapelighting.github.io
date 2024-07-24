@@ -38,6 +38,10 @@ footer {
     @extend .clearfix;
 }
 
+main {
+    @extend .content-block;
+}
+
 .content-block {
     @extend .clearfix;
     margin-top: 5em;

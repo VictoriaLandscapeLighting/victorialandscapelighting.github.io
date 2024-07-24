@@ -1,0 +1,36 @@
+.post {
+
+    .post-header {
+
+        h2 {
+            @extend .mega;
+        }
+
+        p {
+            margin: 0;
+        }
+
+    }
+
+    .summary {
+        margin: 2em 0;
+    }
+
+    dl,
+    dt,
+    dd {
+        margin: 0;
+        padding: 0;
+    }
+
+    dt {
+        grid-column: span 1;
+        font-size: 1.25em;
+        font-weight: 700;
+    }
+
+    dd {
+        grid-column: span 5;
+        font-size: 1.25em;
+    }
+}

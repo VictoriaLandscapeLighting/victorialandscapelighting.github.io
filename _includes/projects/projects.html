@@ -1,17 +1,17 @@
 <section class="projects content-block">
-    {% for project in site.data.projects.projects.projects %}
+    {% for post in site.posts %}
     <div class="project-tile grid-container">
         {%
         include aria-image.html
-        aria-label=project.aria-label
-        image-url=project.image
+        aria-label=post.thumbnail-aria
+        image-url=post.thumbnail
         %}
 
         {%
         include see-more-card.html
-        title="Latest project"
-        subtitle="PROJECT NAME"
-        button-href=project.permalink
+        title="Project"
+        subtitle=post.title
+        button-href=post.permalink
         button-label="Project details"
         %}
     </div>
