@@ -1,0 +1,29 @@
+<section class="faqs content-block" aria-labelledby="faqs-heading" aria-describedby="faqs-description">
+    <h2 id="faqs-heading">{{ site.data.home.faqs.faqs-title }}</h2>
+    <div class="grid-container">
+        <p class="colspan-4">{{ site.data.home.faqs.faqs-description }}</p>
+        <div class="colspan-6">
+            {% for question in site.data.home.faqs.questions %}
+            {% include home/faq-row.html question=question.question answer=question.answer %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+      {% for question in site.data.home.faqs.questions %}
+      {
+        "@type": "Question",
+        "name": "{{ question.question }}",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ question.answer }}"
+        }
+    }
+    {% unless forloop.last %},{% endunless%}
+    {% endfor %}
+    ]}
+</script>

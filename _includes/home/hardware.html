@@ -1,0 +1,10 @@
+<section class="hardware grid-container content-block" aria-labelledby="hardware-heading" aria-describedby="hardware-description">
+    <div class="colspan-4 offset-1">
+        <h2 id="hardware-heading">{{ site.data.home.hardware.hardware-title }}</h2>
+        <p id="hardware-description">{{ site.data.home.hardware.hardware-description }}</p>
+        {%
+        include checkmarklist.html
+        items=site.data.home.hardware.hardware-features
+        %}
+    </div>
+</section>

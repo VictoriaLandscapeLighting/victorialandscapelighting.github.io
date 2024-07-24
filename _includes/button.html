@@ -1,0 +1,6 @@
+{% if include.type == "primary" %}
+<a class="button-primary" href="{{ include.href }}">{{ include.label }}</a>
+{% endif %}
+{% if include.type == "secondary" %}
+<a class="button-secondary" href="{{ include.href }}">{{ include.label }}</a>
+{% endif %}

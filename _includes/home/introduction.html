@@ -1,0 +1,10 @@
+<section class="introduction grid-container content-block" aria-labelledby="introduction-heading" aria-describedby="introduction-description">
+    <div class="colspan-4 offset-1">
+        <h2 id="introduction-heading">{{ site.data.home.introduction.introduction-title }}</h2>
+        <p id="introduction-description">{{ site.data.home.introduction.introduction-body }}</p>
+        {% 
+        include checkmarklist.html 
+        items=site.data.home.introduction.introduction-features 
+        %}
+    </div>
+</section>

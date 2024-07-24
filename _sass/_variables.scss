@@ -4,16 +4,29 @@ $font-sans-serif: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "
 
 /* Colors */
 
-$color: #254920;
+$brand-primary: #254920;
+$brand-secondary: #CFA47A;
+$brand-tertiary: #F7F4ED;
+
+$link-color: $brand-primary;
+$link-color--hover: #0E2D0A;
+
+$color: $brand-primary;
 $color--darkMode: green;
 
-$color-background: #ECEEEB;
+$color-background: #FEFCF7;
 $color-background--darkMode: #111;
 
 /* Layout */
 
-$width: 60em;
+$width: 962px;
+$corner-radius--large: 24px;
 
 /* Responsive */
 
+$breakpoint-large: 820px;
 $breakpoint-small: 640px;
+
+/* Images */
+$image-height-large: 400px;
+$image-height-small: 300px;

@@ -1,0 +1,6 @@
+- title: home
+  url: "/"
+- title: projects
+  url: "/projects/"
+- title: contact
+  url: "/contact/"

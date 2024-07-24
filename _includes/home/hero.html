@@ -1,0 +1,14 @@
+<section class="hero content-block" aria-labelledby="hero-heading" aria-describedby="hero-description">
+    <div class="grid-container">
+        <h1 id="hero-heading" class="colspan-4">{{ site.data.home.hero.hero-h1 }}</h1>
+    </div>
+    <div class="grid-container">
+        <p id="hero-description" class="colspan-4">{{ site.data.home.hero.hero-description }}</p>
+    </div>
+    {% 
+    include button.html
+    type="primary"
+    label=site.data.home.hero.hero-cta
+    href="" 
+    %}
+</section>

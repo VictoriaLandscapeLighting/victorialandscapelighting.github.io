@@ -1,0 +1,44 @@
+.see-more-card {
+    @extend .rounded-corner;
+    background-color: $brand-tertiary;
+    padding: 1.25em;
+    display: flex;
+    flex-direction: column;
+
+    p {
+        margin: 0;
+    }
+
+    .see-more-title {
+        font-size: 1em;
+    }
+
+    .see-more-subtitle {
+        font-size: 1.25em;
+
+        @media screen and (max-width: $breakpoint-small) {
+            margin-bottom: 1em;
+        }
+    }
+
+    a {
+        margin-top: auto;
+        display: flex;
+        color: $link-color;
+        font-size: 1.25em;
+        font-weight: 500;
+
+        span {
+            margin-left: auto;
+            transition: 50ms linear;
+        }
+
+        &:hover {
+            color: $link-color--hover;
+
+            span {
+                transform: translateX(4px);
+            }
+        }
+    }
+}

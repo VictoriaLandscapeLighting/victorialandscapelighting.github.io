@@ -3,31 +3,81 @@ layout: compress
 ---
 <!DOCTYPE html>
 <html lang="en-GB">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
-        {% if page.class != "home" %}
-        <title>{{ page.title }} &mdash; Victoria Landscape Lighting</title>
-        {% else %}
-        <title>Victoria Landscape Lighting</title>
-        {% endif %}
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="">
-        <meta property="og:image" content="">
-        <meta property="og:description" content="">
-        <meta property="og:site_name" content="">
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="">
-        <meta name="twitter:creator" content="@individual_account">
-        <meta name="twitter:title" content="">
-        <meta name="twitter:description" content="">
-        <meta name="twitter:image" content="">
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-        <link color="#888" href="/favicon.svg" rel="mask-icon">
-        {% assign cacheBust = site.time | date:'?v=%s' %}
-        <link rel="stylesheet" href="{{ "/css/main.css" | append: cacheBust }}">
-    </head>
-    <body class="{{ page.class }}">
-        {% include main.html %}
-    </body>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    {% if page.class != "home" %}
+    <title>{{ page.title }} &mdash; Victoria Landscape Lighting</title>
+    {% else %}
+    <title>Victoria Landscape Lighting</title>
+    {% endif %}
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Victoria Landscape Lighting">
+    <meta property="og:image" content="https://www.victorialandscapelighting.com/images/og-image.jpg">
+    <meta property="og:description" content="Located in Victoria, BC, we specialize in designing and installing landscape lighting solutions. Whether you want to highlight your garden, walkway, or outdoor living areas, our energy-efficient lighting options bring elegance and safety to your property while increasing curb appeal.">
+    <meta property="og:site_name" content="Victoria Landscape Lighting">
+    <meta property="og:url" content="https://www.victorialandscapelighting.com">
+    <meta property="og:locale" content="en_CA">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Victoria Landscape Lighting">
+    <meta name="twitter:description" content="Located in Victoria, BC, we specialize in designing and installing landscape lighting solutions. Whether you want to highlight your garden, walkway, or outdoor living areas, our energy-efficient lighting options bring elegance and safety to your property while increasing curb appeal.">
+    <meta name="twitter:image" content="https://www.victorialandscapelighting.com/images/social-share-image.jpg">
+    <meta property="instagram:site" content="@victorialandscapelighting">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link color="#888" href="/favicon.svg" rel="mask-icon">
+    {% assign cacheBust = site.time | date:'?v=%s' %}
+    <link rel="stylesheet" href="{{ " /css/main.css" | append: cacheBust }}">
+    <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "ElectricalContractor",
+              "name": "Victoria Landscape Lighting",
+              "image": "",
+              "url": "https://www.victorialandscapelighting.com",
+              "telephone": "+1-555-123-4567",
+              "priceRange": "$$",
+              "description": "",
+              "areaServed": [
+                {
+                  "@type": "City",
+                  "name": "Victoria",
+                  "addressRegion": "BC",
+                  "addressCountry": "CA"
+                },
+                {
+                  "@type": "City",
+                  "name": "Saanich",
+                  "addressRegion": "BC",
+                  "addressCountry": "CA"
+                }
+              ],
+              "service": {
+                "@type": "Service",
+                "name": "Landscape Lighting Design and Installation",
+                "areaServed": {
+                  "@type": "State",
+                  "name": "British Columbia"
+                }
+              },
+              "openingHoursSpecification": [{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "17:00"
+              }],
+              "sameAs": [
+                "https://www.instagram.com/victorialandscapelighting"
+              ]
+            }
+            </script>
+</head>
+
+<body class="{{ page.class }}">
+    {% include header.html %}
+    {% include main.html %}
+    {% include footer.html %}
+    <script src="/scripts/site.js" defer></script>
+</body>
+
 </html>
