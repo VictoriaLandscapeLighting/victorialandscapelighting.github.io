@@ -1,8 +1,9 @@
-html {
+body {
     background-color: $color-background;
     color: $color;
     font-weight: normal;
     font-family: $font-sans-serif;
+    font-size: 1em;
     line-height: 1.5;
     letter-spacing: -0.3px;
     scroll-behavior: smooth;
@@ -13,10 +14,46 @@ html {
     @media screen and (max-width: $breakpoint-small) {
         font-size: 100%;
     }
+
+    &.light-mode {
+        background-color: $color-background;
+        color: $color;
+    }
+
+    &.dark-mode {
+        background-color: black;
+        color: pink;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        background-color: black;
+        color: pink;
+    }
+}
+
+main,
+header,
+footer {
+    @extend .width;
+    @extend .clearfix;
 }
 
 main {
-    @extend .width;
+    @extend .content-block;
+}
+
+.content-block {
     @extend .clearfix;
-    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+
+    h2 {
+        margin: 0;
+    }
+
+    p {
+        font-size: 1.25em;
+        margin-top: 1.6em;
+        margin-bottom: 1.6em;
+    }
 }

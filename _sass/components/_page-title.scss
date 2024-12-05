@@ -1,0 +1,10 @@
+.page-title {
+
+    h2 {
+        @extend .mega;
+    }
+
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+}

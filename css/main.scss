@@ -1,6 +1,32 @@
 ---
 ---
 @import
+// Base
+'normalize',
 'variables',
 'extends',
-'style'
+'grid',
+'type',
+'style',
+// Home
+'home/about',
+'home/faqs',
+'home/hardware',
+'home/hero-image',
+'home/hero',
+'home/introduction',
+'home/process',
+'home/recent-work',
+// Post
+'post/post',
+// Projects
+'projects/projects',
+// Components
+'components/aria-image',
+'components/button',
+'components/checkmarklist',
+'components/footer',
+'components/get-in-touch',
+'components/header',
+'components/page-title',
+'components/see-more-card'

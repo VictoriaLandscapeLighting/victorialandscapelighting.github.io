@@ -1,0 +1,22 @@
+.about {
+
+    h2 {
+        @extend .mega;
+    }
+
+    p {
+        
+    }
+
+    .placeholder {
+        height: 420px;
+        background: red;
+        border-radius: $corner-radius--large;
+    }
+
+    .aria-image {
+        @extend .image-400-300;
+        @extend .rounded-corner;
+    }
+
+}

@@ -1,0 +1,22 @@
+<section class="post-header content-block" aria-labelledby="post-title" aria-describedby="post-description">
+    <h2 id="post-title">{{ include.title }}</h2>
+    <div class="summary">
+        <dl>
+            <div class="grid-container">
+                <dt>Location</dt>
+                <dd>{{ include.area }}</dd>
+            </div>
+            <div class="grid-container">
+                <dt>Designer</dt>
+                <dd>{{ include.designer }}</dd>
+            </div>
+            <div class="grid-container">
+                <dt>Installer</dt>
+                <dd>{{ include.installer }}</dd>
+            </div>
+        </dl>
+    </div>
+    <div class="grid-container">
+        <p id="post-description" class="colspan-4">{{ include.description }}</p>
+    </div>
+</section>

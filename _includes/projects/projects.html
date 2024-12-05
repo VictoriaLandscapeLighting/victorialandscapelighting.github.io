@@ -1,0 +1,19 @@
+<section class="projects content-block">
+    {% for post in site.posts %}
+    <div class="project-tile grid-container">
+        {%
+        include aria-image.html
+        aria-label=post.thumbnail-aria
+        image-url=post.thumbnail
+        %}
+
+        {%
+        include see-more-card.html
+        title="Project"
+        subtitle=post.title
+        button-href=post.permalink
+        button-label="Project details"
+        %}
+    </div>
+    {% endfor %}
+</section>

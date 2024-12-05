@@ -1,0 +1,10 @@
+<div class="checkmarklist">
+    <ul>
+        {% for item in include.items %}
+        <li>
+            <span class="checkmark" aria-hidden="true">&check;</span>
+            <p>{{ item.feature }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

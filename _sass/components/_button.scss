@@ -1,0 +1,25 @@
+.button-primary,
+.button-secondary {
+    border-radius: 12px;
+    padding: .75em 1em;
+    font-size: 1.25em;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button-primary {
+    color: white;
+    background: $brand-primary;
+
+    &:hover {
+        background: $link-color--hover;
+    }
+}
+
+
+.button-secondary {
+    color: white;
+    background: $brand-secondary;
+}

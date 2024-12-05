@@ -1,0 +1,21 @@
+<section class="process content-block" aria-labelledby="process-heading" aria-describedby="process-description">
+    <div class="grid-container">
+        <div class="colspan-4 offset-1">
+            <h2 id="process-heading">{{ site.data.home.process.process-title }}</h2>
+            <p id="process-description">{{ site.data.home.process.process-description }}</p>
+        </div>
+    </div>
+    <div class="process-steps grid-container colspan-6">
+        {% for process in site.data.home.process.process %}
+        <div class="process-step colspan-2">
+            {% include svgs/number-{{ forloop.index }}.svg %}
+            <p class="process-step-title">
+                {{ process.title }}
+            </p>
+            <p class="process-step-description">
+                {{ process.description }}
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+</section>

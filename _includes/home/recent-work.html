@@ -1,0 +1,23 @@
+<section class="recent-work" aria-label="">
+    <div class="grid-container">
+        {%
+        include aria-image.html
+        aria-label=site.data.home.recent-work.image-1-aria-label
+        image-url=site.data.home.recent-work.image-1
+        %}
+        
+        {%
+        include see-more-card.html
+        title=site.data.home.recent-work.card-title
+        subtitle=site.data.home.recent-work.project-name
+        button-href="/projects/"
+        button-label=site.data.home.recent-work.button-label
+        %}
+
+        {%
+        include aria-image.html
+        aria-label=site.data.home.recent-work.image-2-aria-label
+        image-url=site.data.home.recent-work.image-2
+        %}
+    </div>
+</section>

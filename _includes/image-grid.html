@@ -1,0 +1,13 @@
+<div class="image-grid">
+    {% for i in (1..10) %}
+      {% assign image_key = 'image' | append: i %}
+      {% assign span_key = 'image' | append: i | append: 'span' %}
+      {% if include[image_key] %}
+        {% assign image = include[image_key] %}
+        {% assign span = include[span_key] | default: 1 %}
+        <div class="image-item span-{{ span }}">
+          <img src="{{ image }}" alt="Image {{ i }}">
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>

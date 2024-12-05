@@ -5,7 +5,7 @@
     position: relative;
 
     @media screen and (max-width: $breakpoint-small) {
-        padding: 0 2em;
+        padding: 0 1.5em;
     }
 }
 
@@ -13,4 +13,16 @@
     content: "";
     clear: both;
     display: table;
+}
+
+.rounded-corner {
+    border-radius: $corner-radius--large;
+}
+
+.image-400-300 {
+    height: $image-height-large;
+
+    @media screen and (max-width: $breakpoint-small) {
+        height: $image-height-small;
+    }
 }

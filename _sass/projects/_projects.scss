@@ -1,0 +1,32 @@
+.projects {
+
+    .project-tile {
+        margin-bottom: 16px;
+    }
+
+    .aria-image {
+        @extend .image-400-300;
+        @extend .rounded-corner;
+        grid-column: span 4;
+
+        @media screen and (max-width: $breakpoint-large) {
+            grid-column: span 3;
+        }
+
+        @media screen and (max-width: $breakpoint-small) {
+            grid-column: span 6;
+        }
+    }
+
+    .see-more-card {
+        grid-column: span 2;
+
+        @media screen and (max-width: $breakpoint-large) {
+            grid-column: span 3;
+        }
+
+        @media screen and (max-width: $breakpoint-small) {
+            grid-column: span 6;
+        }
+    }
+}

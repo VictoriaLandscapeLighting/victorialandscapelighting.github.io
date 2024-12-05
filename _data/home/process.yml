@@ -1,0 +1,12 @@
+process-title: Quick and simple.
+process-description: What we do isn’t complicated, so working with us shouldn’t be either.  
+process:
+  - step: 1
+    title: On-site visit
+    description: We’ll come out to your property to meet you and understand what you’re looking for.
+  - step: 2
+    title: Quote
+    description: Within 24hrs you’ll receive a detailed project quote, including a plan showing all hardware and wiring.
+  - step: 3
+    title: Installation
+    description: We’ll come back to your property and install the hardware and wiring exactly to spec.

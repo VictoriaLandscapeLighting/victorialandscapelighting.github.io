@@ -1,0 +1,102 @@
+footer {
+
+    .footer-container {
+        padding: 1.25em 2em;
+        background: $brand-tertiary;
+        border-radius: $corner-radius--large;
+        margin-bottom: 2em;
+
+        @media screen and (max-width: $breakpoint-small) {
+            margin-bottom: 1.5em;
+        }
+    }
+
+    .grid-container {
+
+        /// Override our grid layout to block
+        /// when we get to tablet size
+        @media screen and (max-width: $breakpoint-large) {
+            display: block;
+        }
+    }
+
+    .align-right {
+        margin-left: auto;
+    }
+
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid $color-background;
+        margin: 20px 0;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+
+        @media screen and (max-width: $breakpoint-large) {
+            display: block;
+            margin-top: 2em;
+        }
+    }
+
+    li {
+        margin-left: .5em;
+
+        @media screen and (max-width: $breakpoint-large) {
+            margin: 0;
+        }
+    }
+
+    a {
+        color: $link-color;
+
+        &:hover {
+            color: $link-color--hover;
+        }
+
+        @media screen and (max-width: $breakpoint-large) {
+            margin: 0;
+        }
+    }
+
+    svg {
+        fill: $brand-primary;
+
+        &:hover {
+            fill: $link-color--hover;
+        }
+    }
+
+    .middot {
+        @media screen and (max-width: $breakpoint-large) {
+            display: none;
+        }
+    }
+
+    .instagram,
+    .copyright {
+        @media screen and (max-width: $breakpoint-large) {
+            margin-top: 2em;
+        }
+    }
+
+    .instagram {
+
+        a {
+            display: flex;
+        }
+    }
+}
